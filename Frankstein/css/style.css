@@ -5,6 +5,7 @@ body {
   height: 100vh;
   background: url(../imgs/eessa.gif);
   background-size: cover;
+  overflow: hidden;
 }
 
 #login {
@@ -12,8 +13,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  font-family: Cambria, Cambria, Cochin, Georgia, Times, "Times New Roman",
-    serif;
+  font-family: "Source Serif 4", sans-serif;
 }
 
 .card {

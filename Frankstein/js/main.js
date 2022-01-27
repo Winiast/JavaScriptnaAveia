@@ -9,8 +9,13 @@ function verificarLogin(name, password) {
     let p = 1;
     let y = 0;
     if (password == usuariosValidos[i][p] && name == usuariosValidos[i][y]) {
-      console.log(usuariosValidos[i][y]);
-      console.log(usuariosValidos[i][p]);
+      window.location.href = "http://127.0.0.1:5500/Frankstein/html/home.html";
+    } else if (
+      password != usuariosValidos[i][p] &&
+      name != usuariosValidos[i][y]
+    ) {
+      alert("Usuario não localizado, Tente novamente com outro login");
+      break;
     }
     y++;
     p++;
