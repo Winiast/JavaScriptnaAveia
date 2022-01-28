@@ -14,13 +14,58 @@
     <link rel="stylesheet" href="../css/homeStyle.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light btn-ligh">
+    <nav class="navbar navbar-expand-lg bg-black navbar-light btn-ligh">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img src="../imgs/download.png" widht="220" height="120"
+          ><img
+            src="../imgs/rick-and-morty-folder-icon-43820.png"
+            widht="200"
+            height="100"
         /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expande="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Masculino</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Feminino</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Quem Somos</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              arial-label="Search"
+            />
+            <button class="btn btn-outline-sucess" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
+
+    <section class="quemsomos">
+      <div class="container"></div>
+    </section>
     <script src="../js/home.js"></script>
   </body>
 </html>
