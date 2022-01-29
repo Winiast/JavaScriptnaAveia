@@ -1,4 +1,18 @@
 .btn {
-  background-color: rgb(41, 38, 38);
+  background-color: rgb(38, 40, 41);
   color: whitesmoke;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100wv;
+  background-image: linear-gradient(
+    to right top,
+    #1f2123,
+    #304753,
+    #387382,
+    #3ba2ab,
+    #4bd4cc
+  );
 }
