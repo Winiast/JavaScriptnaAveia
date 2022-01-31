@@ -41,6 +41,24 @@ body {
   color: #fff2ef;
   font-weight: 400;
   font-size: 16px;
+  transform: 2ms ease-in;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-item:before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: rgb(134, 172, 184);
+  transition: all 1s ease;
+}
+
+.navbar-item:hover:before {
+  width: 100%;
 }
 
 .conteudo-main {
@@ -80,21 +98,43 @@ body {
   color: #ecd6c4;
 }
 
-.button-main:hover {
-  background-color: #b6bcbd;
-}
-
 .button-main {
-  background-color: #ecd6c4;
+  background-color: transparent;
+  cursor: pointer;
   width: 180px;
   height: 60px;
-  border: none;
+  border: 3px solid white;
+  letter-spacing: 1.5px;
   box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   font-family: "Sarala", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  color: #2f2325;
+  color: #dad1d2;
+  position: relative;
+  transition: 1.5s;
+}
+
+.button-main:before {
+  content: "";
+  border-radius: 20px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 60px;
+  background-color: rgba(93, 214, 208, 0.877);
+  z-index: -1;
+  transition: 1s;
+}
+
+.button-main:hover {
+  border: none;
+  background-color: rgb(84, 136, 136);
+}
+
+.button-main:hover:before {
+  width: 100%;
 }
 
 .conteudo-inferior-escrito {
